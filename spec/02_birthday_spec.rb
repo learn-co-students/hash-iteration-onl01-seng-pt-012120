@@ -7,6 +7,7 @@ describe "#happy_birthday" do
       "Sarah" => 6,
       "Amanda" => 27
     }
+    
 
     expect{happy_birthday(birthday_kids)}.to output("Happy Birthday Timmy! You are now 9 years old!\nHappy Birthday Sarah! You are now 6 years old!\nHappy Birthday Amanda! You are now 27 years old!\n").to_stdout
 
@@ -16,7 +17,7 @@ end
 ## BONUS ##
 ## Change "xit" to "it" in the test block to enable
 describe "#age_appropriate_birthday" do
-  xit "only prints the birthday greeting if the birthday kid 12 or younger" do
+  it "only prints the birthday greeting if the birthday kid 12 or younger" do
     birthday_kids = {
       "Timmy" => 9,
       "Sarah" => 6,
